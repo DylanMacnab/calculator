@@ -1134,7 +1134,7 @@ input::-webkit-inner-spin-button {
   width: 350px;
   margin: 0 auto;
   background: linear-gradient(#FF0066, #BB07AD);
-  box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.17);
   text-align: center;
   color: white;
   line-height: 1;
@@ -1165,5 +1165,5 @@ input::-webkit-inner-spin-button {
   margin: 0.5%;
   cursor: pointer; }
   [class^="btn-"]:active {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.15);
     transition: .1s; }
