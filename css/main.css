@@ -360,7 +360,7 @@ th {
   box-sizing: border-box; }
 
 body {
-  background: #C9329E url("/img/noise.png");
+  background: white;
   padding-top: 40px; }
 
 p {
@@ -382,7 +382,6 @@ img {
   cursor: pointer; }
 
 input {
-  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
   border: none;
   color: white;
   letter-spacing: .05rem; }
@@ -1129,83 +1128,3 @@ input::-webkit-inner-spin-button {
   padding: 0;
   position: absolute;
   width: 1px; }
-
-.timer-container {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto; }
-
-.timer-input {
-  width: 100%;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.25);
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: white;
-  font-size: 18px;
-  text-align: center; }
-  @media (min-width: 992px) {
-    .timer-input {
-      font-size: 20px; } }
-  .timer-input:active, .timer-input:focus {
-    background: rgba(255, 255, 255, 0.3); }
-
-.timer-controls {
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-between; }
-
-.timer-button {
-  background: rgba(0, 0, 0, 0.1);
-  width: 30%;
-  padding: 15px;
-  font-size: 12px; }
-  @media (min-width: 992px) {
-    .timer-button {
-      font-size: 14px; } }
-  .timer-button:hover {
-    background: rgba(0, 0, 0, 0.15); }
-
-.timer-start {
-  background: #6400D8; }
-  .timer-start:hover {
-    background: #4c00a5; }
-
-.timer-display {
-  display: block;
-  line-height: 1;
-  margin: 0 auto;
-  margin-top: 30px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 100px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.15); }
-  @media (min-width: 992px) {
-    .timer-display {
-      font-size: 140px; } }
-
-.state-setting {
-  position: fixed;
-  bottom: -185px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-180deg);
-  transition: transform 1s;
-  width: 300px; }
-  @media (min-width: 768px) {
-    .state-setting {
-      width: 500px;
-      bottom: -310px; } }
-  @media (min-width: 992px) {
-    .state-setting {
-      width: 700px;
-      bottom: -435px; } }
-
-.state-floor {
-  position: fixed;
-  bottom: 0;
-  height: 30px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2); }
-
-.state-rotate {
-  transform: translateX(-50%) rotate(0deg); }

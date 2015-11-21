@@ -20,7 +20,7 @@
 // -------------------------
 
 body {
-  background: $base url('/img/noise.png');
+  background: white;
   padding-top: 40px;
 }
 
@@ -120,7 +120,6 @@ img {
 // **************************************************
 
 input {
-  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
   border: none;
   color: white;
   letter-spacing: .05rem;
