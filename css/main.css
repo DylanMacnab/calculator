@@ -360,7 +360,7 @@ th {
   box-sizing: border-box; }
 
 body {
-  background: white;
+  background: #39394C;
   padding-top: 40px; }
 
 p {
@@ -1128,3 +1128,31 @@ input::-webkit-inner-spin-button {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.calculator {
+  height: 478px;
+  width: 350px;
+  background: linear-gradient(#FF0066, #BB07AD);
+  box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  line-height: 1; }
+
+.calculator__display {
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2); }
+
+[class^="btn-"] {
+  float: left;
+  width: 24%;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.1);
+  border: 5px solid transparent;
+  margin: 0.5%; }

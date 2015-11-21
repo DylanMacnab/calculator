@@ -1,0 +1,36 @@
+// **************************************************
+// Calculator.scss
+// Description: basic calculator styles
+// **************************************************
+
+.calculator {
+  height: 478px;
+  width: 350px;
+  background: $gradient-1;
+  box-shadow: 15px 15px 0 0 rgba(black, .2);
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  line-height: 1;
+}
+
+.calculator__display {
+  height: 120px;
+  width: 100%;
+  background: $gradient-2;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  box-shadow: 0 2px rgba(black, .2);
+}
+
+
+[class^="btn-"] {
+  float: left;
+  width: 24%;
+  padding: 30px 0;
+  background: rgba(black, .1);
+  border: 5px solid transparent;
+  margin: 0.5%;
+}
