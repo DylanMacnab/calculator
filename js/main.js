@@ -49,6 +49,9 @@ function calculateStuff(calcInput) {
     case "/":
       result = divide(num1, num2);
       break;
+    case null:
+      console.log("do nothing");
+      break;
     default:
 		  console.log("something isn't going right!");
   }
@@ -74,8 +77,14 @@ function displayButtonInput(buttonInput) {
 var btnNumber = document.getElementsByClassName("btn-number");
 for (var i = 0; i < btnNumber.length; i++) {
   btnNumber[i].addEventListener("click", function() {
-    inputString += (this.innerHTML);
-    displayButtonInput(this.innerHTML);
+    if (inputString === "=") {
+      display.innerHTML = "";
+      inputString = (this.innerHTML);
+      displayButtonInput(this.innerHTML);
+    } else {
+      inputString += (this.innerHTML);
+      displayButtonInput(this.innerHTML);
+    }
   });
 }
 
@@ -84,7 +93,6 @@ for (var i = 0; i < btnOperator.length; i++) {
   btnOperator[i].addEventListener("click", function() {
     inputString += (this.innerHTML);
     displayButtonInput(this.innerHTML);
-    console.log(inputString);
   });
 }
 
@@ -105,3 +113,4 @@ btnCancel.addEventListener("click", function() {
 // Fix colors
 // Add equation
 // Fix for loop to add event listners
+// Prevent from clicking multiple operators in a row
