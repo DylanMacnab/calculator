@@ -12,25 +12,31 @@
 
     <body>
 
-        <div class="timer-container">
-          <audio>
-          	<source src="sounds/timer-bell.mp3"></source>
-          	<source src="sounds/timer-bell.ogg"></source>
-          </audio>
+      <div class="calculator"><div>
 
-          <input id="minutes" class="timer-input" type="text" name="minutes" placeholder="How many minutes?" autocomplete="off"></input>
-          <div class="timer-controls">
-            <input id="stop" class="timer-button" type="button" value="Pause"></input>
-            <input id="start" class="timer-button timer-start" type="button" value="Start Timer"></input>
-            <input id="reset" class="timer-button" type="button" value="Reset"></input>
-          </div>
-          <h1 id="time-display" class="timer-display">00:00</h1>
-        </div>
+        <div id="display" class="calculator__display"></div>
+        
+        <div id="btn-number" class="btn-number">7</div>
+        <div id="btn-number" class="btn-number">8</div>
+        <div id="btn-number" class="btn-number">9</div>
+        <div id="btn-operator" class="btn-operator">*</div>
 
-        <div class="state-floor"></div>
-        <img id="background-setting" class="state-setting" src="img/desk-tea.svg">
-        <!-- <img id="focus-background" class="state-focus" src="img/focus-desk.svg">
-        <img id="break-background" class="state-break" src="img/break-background.svg"> -->
+        <div id="btn-number" class="btn-number">4</div>
+        <div id="btn-number" class="btn-number">5</div>
+        <div id="btn-number" class="btn-number">6</div>
+        <div id="btn-operator" class="btn-operator">/</div>
+
+        <div id="btn-number" class="btn-number">1</div>
+        <div id="btn-number" class="btn-number">2</div>
+        <div id="btn-number" class="btn-number">3</div>
+        <div id="btn-operator" class="btn-operator">-</div>
+
+        <div id="btn-number" class="btn-number">0</div>
+        <div id="btn-equals" class="btn-">=</div>
+        <div id="btn-cancel" class="btn-">c</div>
+        <div id="btn-operator" class="btn-operator">+</div>
+
+      </div>
 
       <script src="js/min/main-min.js"></script>
     </body>
