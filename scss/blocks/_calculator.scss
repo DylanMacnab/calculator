@@ -1,0 +1,66 @@
+// **************************************************
+// Calculator.scss
+// Description: basic calculator styles
+// **************************************************
+
+.calculator {
+  background: $gradient-1;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: .1rem;
+
+  box-shadow: 15px 15px 0 rgba(black, .2);
+
+  // Disable select / highlighting with cursor
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.calculator__display {
+  padding-top: 40px;
+  font-size: 35px;
+  height: 120px;
+  background: $gradient-2;
+  width: 100%;
+  margin-bottom: 2px;
+  box-shadow: 0 2px rgba(black, .2);
+  letter-spacing: .1rem;
+}
+
+.calculator__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2px;
+  &:last-of-type {
+    margin-bottom: 0;;
+  }
+}
+
+[class^="btn-"] {
+  height: 80px;
+  width: 25%;
+  padding-top: 30px;
+  color: white;
+  background: rgba(black, .15);
+  margin-left: 2px;
+  border-radius: 1px;
+  text-align: center;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:active {
+    background: rgba(black, .3);
+  }
+  &:hover {
+    background: rgba(black, .18);
+  }
+}
