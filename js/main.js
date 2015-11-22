@@ -109,8 +109,9 @@ btnCancel.addEventListener("click", function() {
 });
 
 
+// Bugs / Features
+// ----------------------------------------------------------
+
 // Equals buttons should reset variables for next calculation
-// Fix colors
 // Add equation
 // Fix for loop to add event listners
-// Prevent from clicking multiple operators in a row
